@@ -33,51 +33,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <div class="row">
-                    <div class="col-md-1">
-                        <img src="img/chitra.ico" height="32" width="32" />
-                    </div>
-                    <div class="col-md-11">
-                        <a class="navbar-brand" href="#"> চিত্রা মাল্টিপারপাস কো-অপারেটিভ সোসাইটি লিমিটেড </a>
-                    </div>
-                </div>
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">নীড়পাতা</a></li>
-                    <li><a href="about.html">আমাদের পরিচিতি</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                      </ul>
-                    </li>
-                </ul>
-                <!-- <form class="navbar-form navbar-right"> 
-                    <input type="text" class="form-control" placeholder="Search...">
-                </form> -->
-            </div>
-        </div>
-    </nav>
+    <div class="include" data-include="navbar"></div>
 
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -87,44 +43,10 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2 sidebar">
-                <ul class="nav nav-sidebar">
-                    <li class="active"><a href="index.html">নীড়পাতা <span class="sr-only">(current)</span></a></li>
-                    <li><a href="about.html">আমাদের পরিচিতি</a></li>
-                    <li><a href="#">Analytics</a></li>
-                    <li><a href="#">Export</a></li>
-                </ul>
-                <ul class="nav nav-sidebar">
-                    <li><a href="">Nav item</a></li>
-                    <li><a href="">Nav item again</a></li>
-                    <li><a href="">One more nav</a></li>
-                    <li><a href="">Another nav item</a></li>
-                    <li><a href="">More navigation</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2 sidebar-right">
-                <ul class="nav nav-sidebar">
-                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Report</a></li>
-                    <li><a href="#">Analytics</a></li>
-                    <li><a href="#">Export</a></li>
-                </ul>
-                <ul class="nav nav-sidebar">
-                    <li><a href="">Nav item</a></li>
-                    <li><a href="">Nav item again</a></li>
-                    <li><a href="">One more nav</a></li>
-                    <li><a href="">Another nav item</a></li>
-                    <li><a href="">More navigation</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
+    <div class="include" data-include="sidebar">   </div>
 
     <div class="col-md-8 col-md-offset-2 main">
-        <!-- Carousel
+     index.html   <!-- Carousel
             ================================================== -->
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -221,6 +143,7 @@
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="js/jquery.min.js"></script>
+        <script src="js/chitra.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
         <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
