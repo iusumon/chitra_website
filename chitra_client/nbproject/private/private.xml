@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1">
+        <file>
+            <url>application/views/vproduct_reg.php</url>
+            <line>37</line>
+        </file>
+        <file>
+            <url>application/views/vcustomer_payment.php</url>
+            <line>152</line>
+            <line>352</line>
+        </file>
+        <file>
+            <url>application/views/vpurchase_invoice.php</url>
+            <line>47</line>
+            <line>231</line>
+        </file>
+        <file>
+            <url>application/views/vcust_reg.php</url>
+            <line>48</line>
+        </file>
+        <file>
+            <url>application/views/vvendor_reg.php</url>
+            <line>36</line>
+            <line>261</line>
+        </file>
+        <file>
+            <url>application/views/vfirm_expenses.php</url>
+            <line>41</line>
+        </file>
+        <file>
+            <url>application/controllers/sales_report.php</url>
+            <line>38</line>
+        </file>
+        <file>
+            <url>application/views/vdaily_exp.php</url>
+            <line>41</line>
+        </file>
+    </editor-bookmarks>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0">
+        <file>
+            <url>application/views/vcustomer_payment.php</url>
+            <bookmark id="0">
+                <name/>
+                <line>152</line>
+                <key/>
+            </bookmark>
+            <bookmark id="0">
+                <name/>
+                <line>352</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>application/views/vvendor_reg.php</url>
+            <bookmark id="0">
+                <name/>
+                <line>36</line>
+                <key/>
+            </bookmark>
+            <bookmark id="0">
+                <name/>
+                <line>261</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>application/views/vcust_reg.php</url>
+            <bookmark id="0">
+                <name/>
+                <line>48</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>application/views/vpurchase_invoice.php</url>
+            <bookmark id="0">
+                <name/>
+                <line>47</line>
+                <key/>
+            </bookmark>
+            <bookmark id="0">
+                <name/>
+                <line>231</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>application/controllers/sales_report.php</url>
+            <bookmark id="0">
+                <name/>
+                <line>38</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>application/views/vfirm_expenses.php</url>
+            <bookmark id="0">
+                <name/>
+                <line>41</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>application/views/vdaily_exp.php</url>
+            <bookmark id="0">
+                <name/>
+                <line>41</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>application/views/vproduct_reg.php</url>
+            <bookmark id="0">
+                <name/>
+                <line>37</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/zahid/www/chitra_website/chitra_client/application/views/vacc_balance.php</file>
+            <file>file:/home/zahid/www/chitra_website/chitra_client/application/views/vinvest_acc_ledger.php</file>
+            <file>file:/home/zahid/www/chitra_website/chitra_client/application/controllers/invest_acc_ledger.php</file>
+            <file>file:/home/zahid/www/chitra_website/chitra_client/application/controllers/login.php</file>
+            <file>file:/home/zahid/www/chitra_website/chitra_client/application/controllers/acc_balance.php</file>
+        </group>
+    </open-files>
+</project-private>

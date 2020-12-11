@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tabs {
+    font-size: 1.0em;
+    text-align: center;
+}
+
+.form_style{
+	background-color:#E9E9F3;
+	text-align:left;
+	width:70%;
+	border:0;
+	font-size:11px;
+	font-family:Tahoma;
+	margin-left:15%;
+	BORDER-RIGHT: #6699cc 1px solid ;
+	BORDER-TOP: #6699cc 1px solid;
+	MARGIN-BOTTOM: 1px;
+	BORDER-LEFT: #6699cc 1px solid;
+	BORDER-BOTTOM: #6699cc 1px solid;
+}
+
+.ui-widget-content {
+    font-size: 1.0em;
+    font-family: Tahoma, Arial;
+}
+
+.left{
+ text-align: left;   
+}
+
+.right{
+ text-align: right;   
+}
+
+.center{
+    text-align: center;
+}
+.menuTable {
+	text-align:left;
+	width: 100%;
+	border:0;
+	font-size:11px;
+	BORDER-RIGHT: #6699cc 1px solid ;
+	BORDER-TOP: #6699cc 1px solid;
+	MARGIN-BOTTOM: 1px;
+	BORDER-LEFT: #6699cc 1px solid;
+	BORDER-BOTTOM: #6699cc 1px solid;
+}
+
+#records, #record_sales, #record_sales {
+    font-size: 1em;
+    width: 100%;
+}
+
+#records tr:nth-child(2n) {
+    background: #EAEAEA;
+}
+
+#records tr:hover {
+    background: #CCCCCC;
+}
+
+#records td {
+    padding: 6px;
+    margin: 8px;
+}
+
+.fg-toolbar {
+    padding: 6px;
+}
+
+.dataTables_length, .dataTables_info {
+    float: left;
+    margin: 3px 0 0;
+}
+
+.top_heading {
+    font-weight: bold;
+    text-align: center;
+}
+
+#tblItem {
+    border-collapse: collapse;
+}
+
+#tblItem tr td{
+    border-bottom-color: white;
+    
+}    
+
+#tbl_receipts {
+/*    font-size: .8em;*/
+    width: 100%;
+}
+

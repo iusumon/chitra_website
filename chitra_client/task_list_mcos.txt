@@ -1,0 +1,221 @@
+Year-2017
+-----------------------------------------------------
+//1. user wise deposit Collection report
+   Change: dw_deposit_coll.php, vdw_deposit_coll.php
+
+//2. user wise investment collection report
+
+//3. Occupation on client registration
+   db: ALTER TABLE `tbl_client` ADD `occupation` VARCHAR(20) NOT NULL ;
+
+4. Ledger for client view with login option
+
+//5. Password option for client
+   db: ALTER TABLE `tbl_client` ADD `passwd` VARCHAR(255) NOT NULL ;
+
+//6. Cash Book User wise report in details 
+
+//7. Picture View for Client/Member
+-----------------------------------------------------
+var image_path = "/chitramcos/images/" - for vmember_registration.php
+
+UPDATE tbl_rpt_privilege SET cash_book = '1',
+dep_acc_ledger = '1',
+inv_acc_ledger = '1',
+firm_income = '1',
+firm_expense = '1',
+invest_coll = '1',
+firm_profit = '1',
+other_2 = '1' WHERE tbl_rpt_privilege.user_id = 'U0004';
+
+
+----------------------------------------------
+db_update
+----------------------------------------------
+ALTER TABLE `tbl_income_tran` ADD `user_id` VARCHAR(10) NOT NULL ;
+ALTER TABLE `tbl_expenditure_tran` ADD h
+ALTER TABLE `tbl_share_tran` ADD `user_id` VARCHAR(10) NOT NULL ;
+----------------------------------------------
+
+//1. Codeigniter Environment Setup
+//2. Netbeans configuration
+//3. Database Setup
+//4. Login Page Setup
+//5. Main Menu Setup
+//6. Databse Table Creation
+//7. Member Registration Module
+   -- //Photo upload & views
+   -- //Age Auto Calc
+   -- //Male/Female Option
+
+//8. Customer Registration Module
+
+//9. Savings Account Opening Module
+     //-- Sign card for Account Open
+     //-- Nominee for Account Opent
+//10. Investment Account Opening Module 
+   //-- Photo upload & views
+   //-- Sign card for Account Open
+   //-- Nominee for Account Opent
+   //-- Guarantor 1 & 2 with Photo, name, address, mobile_no
+
+//11. Savings/Deposit Module
+
+//12. Investment Installment Module
+
+//13. Share Account Module 
+      db change: tbl_share_acc, tbl_share_tran
+      share_acc_open.php, vshare_acc_open.php, share_collection, vshare_collection
+      
+
+//15. Report Modules
+
+//16. Database Backup Module
+
+//17. Security Modules (user privileges)
+       change_passwd, vchange_passwd
+
+//19. Deposit Account Type
+
+
+//21. Investment Account Type
+
+
+//23. Table unique keys constraint for Save & Update Button (Profile Registration Tables-Email, Mobile, NID Field)
+      function: validate()
+      Completed: member_registration, client_registration
+
+//25. Datewise Deposit Collection Report
+
+//26. Datewise Installment Collection Report
+
+//27. Expenditure Module
+         db: tbl_expenditure_type
+         file: expenditure_type_reg, vexpenditure_type_reg
+//28. Employee Module
+    db: tbl_salary_acc, tbl_employee_increment, ***tbl_salary_pmt
+
+//29. Income Module
+    db: tbl_income_tran
+
+//30. Cash Book Module
+    db_chage: tbl_share_tran(add user_id)
+
+//31. Invest Disburse with Principal Profit
+    (Add in Remarks Profit & principal)
+    - Installment calculation would require
+    - Commodity price would require
+    - Auto Investment Installment from Transaction Table instead of A/c Table
+
+
+//32. Print Option in PDF for Ledger and Profiles (Member Registration)
+      Completer: member list, customer list & deposit account ledger, deposit account balance, investment account balance
+                 Investment Account Ledger, 
+      Copy from vendor ledger in esms_ara
+
+//36. Depsit Account Balance
+      DB Change: sp_dep_acc_balance.sql
+
+//37. Investment Account Balance with Overude Installment and Amount
+    DB Change: sp_inv_recov_due_lst.sql
+
+    To_Do: Datewise Cash Book, Datewise deposit collection, Datewise invest collection,
+           Firm Income Report, Firm Expense Report
+
+//39. Group by Account Type in deposit account balance report
+      DB Change: sp_dep_acc_balance.sql
+
+//40. Urgent PDF Print Option: Deposit Account, Investment Account, Share Account
+
+
+//42. Share Account Ledger
+      DB Change: sp_share_acc_ledger
+
+//43. Share A/c Balance for Client Report
+      DB Change:sp_account_details 
+
+24. Table admin privilege/Security for Update & Delete Button
+
+    function-check_login_status(), update_data()-For All Tbls, delete_data()-For All Tbls 
+             from model_db_integrity_check
+
+        --check_login_status() -for Transaction Tables
+        if ($this->Model_db_integrity_check->check_privilege('daily_coll') == "failed") {
+            $msg_validation['valid'] = "You have no permission";
+            echo json_encode($msg_validation);
+            exit(0);
+        }
+
+        -- for report privilege
+        if ($this->Model_db_integrity_check->check_privilege_rpt('cust_ledger') == "failed") {
+            echo "You have no permission!";
+            exit(0);
+        }
+
+        --update_data()
+        if ($this->Model_db_integrity_check->check_privilege_update() == "failed") {
+            $msg_validation['valid'] = "You have no permission";
+            echo json_encode($msg_validation);
+            exit(0);
+        }
+
+        --delete_data()
+        if ($this->Model_db_integrity_check->check_privilege_delete() == "failed") {
+            echo "You have no permission!";
+            return;
+        }
+
+        //Referential Integrity for all tables depends on this master tbl_
+        if ($this->Model_db_integrity_check->check_integrity('tbl_', 'client_id', $id) == false) {
+            echo 'This member cannot be deleted';
+            return;
+        }
+
+        Completed: member_registration, client_registration, deposit_acc_open, investment_acc_open, daily_collection, deposit_acc_type 
+                   investment_acc_type, deposit_acc_ledger, invest_acc_ledger 
+        pending: share_acc_open
+
+>> 35. Show every member in Loan Report with Overdue Installment No. and Amount
+       or, Different report for Loan Recovery Due List
+       >> DB Change: sp_inv_recov_due_lst.sql
+
+//33. facebook link in website
+//34. email address in website
+14. Savings Profit Product Module
+41. Member and Client Picture not showing in website
+38. PDF print in other modules including Report Menu
+18. Table Integrity for Parent-Child table on Delete Operation
+    parent-tbl_dep_acc_type-child-
+    parent-tbl_member-child-
+    parent-tbl_user-child-
+
+20. create trigger for date_modified field in each table
+
+22. Create Auditing Table and Update the table by trigger for all table's update and delete operations
+
+//35. Profit input in Investment Transaction as ID(Investment Disbursement)
+      DB Change: ALTER TABLE `tbl_investment_tran` ADD `disburse_profit` FLOAT(10,2) NOT NULL ; 
+                 sp_inv_acc_ledger.sql, sp_inv_recov_due_lst.sql
+
+36. Add Account No Parameter in Client Account Query Option
+
+//37. Show deposit balance report on deposit type parameter 
+      DB Change: sp_dep_acc_balance.sql
+      //PDF Report change-done
+
+//38. Show Installment Due option in Loan Balance
+
+//39. Show Deposit Collection based on deposit acc type
+
+//40. Show Investment Collection based on investment acc type
+
+41. Show Investment balance report based on investment acc type
+
+//42. Exclusion of profit from Investment disburse list in Cash Book Date Problem
+      db change: sp_cash_book
+
+Problems
+--------------------
+//1. Member image name saves on serial ahead of member no in remote server
+
+DB Change: tbl_share_acc
